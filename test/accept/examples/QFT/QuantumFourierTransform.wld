@@ -1,0 +1,12 @@
+gate QFT (signal qword) signal qword {
+    
+}
+
+
+signal qword := (){0000}
+prep = phase(180)(4) * phase(90)(2) * phase(45)(1) * hadamard
+circuit = QFT * prep
+result = circuit * signal // cannot access signal anymore than here since it is evaluated
+
+assert signal == Nothing
+value = result()
