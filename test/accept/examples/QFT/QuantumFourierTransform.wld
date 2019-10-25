@@ -1,0 +1,51 @@
+signal <- 0000
+
+define
+(
+    QFT
+)
+(
+    //
+)
+
+define
+(
+    prep
+)
+(
+    compose
+    (
+        PHASE
+        (
+            select(signal)(1)
+        )
+        (45)
+    )
+    (
+        PHASE
+        (
+            select(signal)(2)
+        )
+        (90)
+    )
+    (
+        select(signal)(3)
+    )
+    (
+        PHASE
+        (
+            select(signal)(4)
+        )
+        (180)
+    )
+)
+
+
+QFT
+(
+    prep
+    (
+        HAD(signal)
+    )
+) -> result
+
