@@ -1,6 +1,6 @@
 package token
 
-type ToeknType string
+type TokenType string
 
 type Token struct {
 	Type    TokenType
@@ -9,16 +9,16 @@ type Token struct {
 
 const (
 	ILLEGAL = "ILLEGAL"
-	EOF = "EOF"
+	EOF     = "EOF"
 
 	// identifiers + literals
 	IDENT = "IDENT"
 	EQUAL = "="
-	PLUS = "+"
+	PLUS  = "+"
 
 	// Delimiter
-	COMMA = ","
-	COLON = ":"
+	COMMA     = ","
+	COLON     = ":"
 	SEMICOLON = ";"
 
 	LPAREN = "("
@@ -29,5 +29,3 @@ const (
 
 	// keywords
 )
-
-
