@@ -1,4 +1,6 @@
 # Willard
+![Github Action](https://github.com/cfr2ak/Willard/workflows/Go/badge.svg)
+
 Experimental Quantum Programming Language
 
 ## Signature
