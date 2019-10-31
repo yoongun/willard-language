@@ -1,0 +1,13 @@
+# Define classical bit to 0
+x bit := 0
+
+# Define qbit which is initialized with classical bit
+x -> |y> qbit
+
+# Measure the circuit's result
+|circuit> qbit := H(|y>)
+
+result <- |circuit>
+
+# Print the result
+print(result)
