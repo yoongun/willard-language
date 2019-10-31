@@ -1,0 +1,29 @@
+import Logic.Gate.Phase
+import Logic.Gate.Hadamard
+import Logic.Gate.CNOT
+import Logic.Control
+import Logic.Gate.NOT
+import Read
+
+
+f (alice, bob) = {
+    ep = 0
+    [Hadamard] ep
+
+    ep [CNOT] bob
+    alice [CNOT] ep
+
+    [Hadamard] alice
+
+    alice_result = [Read] alice
+    ep_result = [Read] ep
+
+    if alice_result 
+        [NOT] bob
+    if ep_result 
+        180 [Phase] bob
+} QT
+
+
+alice [QT] bob
+

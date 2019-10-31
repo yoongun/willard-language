@@ -1,0 +1,8 @@
+x byte := 00000000
+
+x -> |y> qbyte
+
+result <- H(8)(|y>)
+
+print result
+
