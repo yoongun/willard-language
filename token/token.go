@@ -17,9 +17,8 @@ const (
 	PLUS  = "+"
 
 	// Delimiter
-	COMMA     = ","
-	COLON     = ":"
-	SEMICOLON = ";"
+	COMMA = ","
+	COLON = ":"
 
 	LPAREN = "("
 	RPAREN = ")"
@@ -28,4 +27,7 @@ const (
 	RBRACE = "}"
 
 	// keywords
+	LT  = "<"
+	GT  = ">"
+	BAR = "|"
 )
