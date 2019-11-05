@@ -7,23 +7,17 @@ Experimental Quantum Programming Language
 ![Signature of the cat F.D.C. Willard](sig.png)
 
 ## Concepts
-I'm quite convince that any quantum programming language should be implemented in a functional way.
-THis leads me to implement this language to use function only. Even a qubit or a qbyte is a function in Willard.
+I have used Q# or Qiskit but I felt like it is quite difficult to implement mathematical QC terms into the library's context.
+I thinks it is easier to move back and forth, if the programming language itself has more similarity with QC's mathematical
+term.
 
-### Video that I got my inspire
+### Video I got my inspire
 #### Youtube 
 ##### Lambda Calculus: PyCon 2019 Tutorial (Screencast)
 https://www.youtube.com/watch?v=5C6sv7-eTKg
 
 ### The core concepts
-___What if the function is the only thing is the universe?___
-
-- No packages/modules
-- No objects
-- No numbers
-- No strings
-- No Datatypes
-
+Use braket to represent quantum register.
 
 ## Compile flow
 This compiler is made with Go programming language and transcript *.wld file into the OpenQASM language to execute on the IBM cloud.
